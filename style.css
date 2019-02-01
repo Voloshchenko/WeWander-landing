@@ -1,0 +1,114 @@
+body {
+	margin: 0;
+}
+
+.header-block h1{
+	font-size: 4em;
+    margin: 0;	
+}
+
+h3 {
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+
+p {
+	font-size: 1.3rem;
+	letter-spacing: 0.02em;
+}
+
+.container{
+	height: 100vh;
+	padding: 30px
+}
+
+.two-columns {
+	display: grid;
+	grid-template-columns: 50% 50%;		
+}
+
+.two-columns * {
+	justify-self: center;
+	align-self: center;
+}
+
+.two-columns>div {
+	width: 60%;
+}
+
+span{
+	color: #EC1328
+}
+
+.red-block{
+	background-color: #EC1328;
+}
+
+.red-block span{
+	color: #FFFFFF;
+	font-weight: bold;	
+}
+
+.white-block{
+	text-align: right;}
+
+.white-block span{
+	color: #EC1328;
+	font-weight: bold;
+}
+
+.white-block h1{
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+img{
+	height: 80vh;
+}
+
+button{
+	background: #B80415;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border: solid 1px #B80415;
+	border-radius: 10px;
+	padding: 10px 10px;
+	width: 100%;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+button:hover{
+	background: #FFFFFF;
+	border: solid 1px #B80415;
+    color: #B80415;
+}
+
+#subscribe {
+	text-align: center;
+}
+
+#subscribe input{
+    width: 500px;
+    display: block;
+    margin: 30px auto;
+    font-size: 2rem;
+    padding: 20px 30px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#subscribe button{
+    width: 20%;
+    padding: 20px 0;	
+}
+
+#subscribe img{
+    width: 10% !important;	
+    height: auto;
+}
+
+#promo{
+	text-align: center;	
+	background-image: url("img/promo.png");
+	background-size: cover;
+}
