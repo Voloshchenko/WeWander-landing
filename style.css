@@ -63,6 +63,10 @@ span {
 	color: #B80415;
 }	
 
+#subscribe {
+    align-items: center;
+} 
+
 /*Mobile design*/
 
 @media only screen and (max-width: 600px) {
@@ -131,28 +135,35 @@ span {
    		margin-top: 78vh;	
 	}
 
-	#about{
+	.two-columns{
 		grid-auto-columns: 50% 50%;
    		align-items: center;
 	}
 
 	#about h1{
-		grid-column-start: 1;
-    	grid-column-end: 3;
+		grid-column: 1/3;
 	}	
 
-	#about div  {
-	  	width: 50%;	
+	.two-columns div  {
+	  	width: 50%;
+	  	grid-column: 2/3;
 	}
 
+	.two-columns.red-block div{
+		grid-column: 1/2;
+		grid-row: 1;	
+	}
+	.two-columns.red-block img{
+		grid-column: 2/3;	
+	}
 }
 
 
-	#about .phone-img, #about div  {
+	.two-columns img, .two-columns div  {
 	  	opacity: 0;	
 	}
 
-	div#about.seen .phone-img  {
+	.two-columns.seen img  {
 	  	animation-name: fade-from-left;
 		animation-duration:2s;
 		animation-fill-mode: forwards;
@@ -160,7 +171,7 @@ span {
 		position: relative;		
 	}
 
-	div#about.seen div {
+	.two-columns.seen div {
 	  	animation-name: fade-from-right;
 		animation-duration:2s;
 		animation-fill-mode: forwards;
