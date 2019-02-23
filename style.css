@@ -69,11 +69,11 @@ span {
 } 
 
 #subscribe input {
-	margin-top: 80px;
+	margin-top: 20px;
 	padding: 10px 20px;	
 }
 #subscribe .btn{
-	 margin-top: 80px;
+	 margin-top: 30px;
 } 
 
 #subscribe input:focus {
@@ -116,6 +116,14 @@ span {
 		align-self: end;		
 	}
 
+	#subscribe img {
+		width: 30%;
+		margin: 20px 0;
+	    vertical-align: middle; 
+	}
+	#subscribe div img:nth-child(2) {
+		width: 35%;
+	}
 }
 
 /*Computer design*/
@@ -170,14 +178,21 @@ span {
 		grid-column: 2/3;	
 	}
 
-
-
 	#subscribe input{
-	    margin-top: 80px;
+	    margin-top: 20px;
 	    padding: 10px 20px;
 	    min-width: 20vw;
 	    font-size: 1.2vw;
 	}	
+
+	#subscribe img {
+		width: 10%;
+		margin: 20px 0; 
+		vertical-align: middle; 
+	}
+	#subscribe div img:nth-child(2) {
+		width: 11%;
+	}
 
 }
 
